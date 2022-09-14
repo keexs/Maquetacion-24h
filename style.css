@@ -1,0 +1,469 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 657px;
+  background-image: url("assets/images/smiling-1.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 0px -250px 50px rgba(0, 132, 255, 0.3);
+}
+
+.navigation-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navigation-tab-logo {
+  margin-left: 50px;
+  position: relative;
+  bottom: 10px;
+}
+
+.navigation-tab-menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  width: 800px;
+  margin-right: 50px;
+}
+.navigation-tab-menu > a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown > a {
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffa454;
+  width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #4f60a4;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover > a {
+  color: #ffa454;
+  text-decoration: underline;
+}
+
+.navigation-tab-menu > a:hover {
+  color: #ffa454;
+  text-decoration: underline;
+}
+
+.navigation-tab-menu > button {
+  width: 130px;
+  height: 50px;
+  align-items: center;
+  border: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #4f60a4;
+  transition: 0.5s;
+}
+
+.navigation-tab-menu > button:hover {
+  background-color: #ffa454;
+  color: #4f60a4;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.header-title > h3 {
+  color: white;
+  font-size: 24px;
+  margin: 5px;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.header-title > h1 {
+  color: #ffa454;
+  font-size: 48px;
+  margin: 5px;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+.subscription-menu {
+  height: 130px;
+  background-color: #ffa454;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.subscription-menu-title {
+  font-size: 40px;
+  color: #4f60a4;
+}
+
+.subscription-menu-inputs-name {
+  width: 180px;
+  height: 50px;
+  padding-left: 20px;
+  background-color: white;
+  border: none;
+}
+.subscription-menu-inputs-email {
+  width: 180px;
+  height: 50px;
+  padding-left: 20px;
+  background-color: white;
+  border: none;
+}
+
+.subscription-menu-inputs-zip {
+  width: 70px;
+  height: 50px;
+  padding-left: 20px;
+  background-color: white;
+  border: none;
+}
+
+.subscription-menu-inputs > input {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.subscription-menu-button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #4f60a4;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  transition: 0.1s;
+}
+
+.subscription-menu-button:hover {
+  position: relative;
+  bottom: 2px;
+  right: 2px;
+  background-color: rgb(0, 119, 255);
+  box-shadow: 2px 2px 2px black;
+}
+
+.subscription-menu-checkbox {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.subscription-menu-checkbox > label {
+  color: white;
+}
+
+.subscription-menu-checkbox > input {
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 0px;
+  background-color: white;
+}
+
+.issueSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  height: 545px;
+  background-image: url(assets/images/people.webp);
+  background-color: rgba(38, 74, 255, 0.8);
+}
+
+.issueSection > * {
+  margin: 70px;
+}
+
+.photoContainer {
+  width: 380px;
+  height: 370px;
+  background-color: #ffa454;
+}
+
+.issueSection-photo {
+  position: relative;
+  bottom: 50px;
+}
+
+.issueSection-info {
+  position: relative;
+  bottom: 20px;
+  right: 50px;
+}
+
+.issueSection-info > h3 {
+  font-size: 40px;
+  color: white;
+}
+
+.issueSection-info > p {
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+}
+
+.issueSection-info > a {
+  text-decoration: none;
+  color: #ffa454;
+}
+
+.issueSection-info > a:hover {
+  text-decoration: underline;
+}
+
+.endorsements {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.endorsements > h2 {
+  margin: 50px;
+  margin-left: 70px;
+  font-size: 40px;
+}
+
+.endorsementsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.endorsements-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 580px;
+}
+
+.endorsement-card-image_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 350px;
+  height: 350px;
+  background-image: url(assets/images/meieran.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.endorsement-card-image_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 350px;
+  height: 350px;
+  background-image: url(assets/images/mutersen.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.endorsement-card-image_3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 350px;
+  height: 350px;
+  background-image: url(assets/images/Lew_Frederick.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.textContainer {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.textContainer > * {
+  margin: 5px;
+}
+
+.textContainer > h3 {
+  color: #ffa454;
+  font-size: 22px;
+}
+
+.textContainer > p {
+  color: white;
+  font-size: 17px;
+}
+
+.endorsement-card-text {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin: 0px;
+  width: 330px;
+  height: 245px;
+  background-color: #4f60a4;
+  color: white;
+  font-size: 17px;
+}
+
+.donations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.donations-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px;
+  width: 700px;
+  margin-top: 0px;
+  margin-left: 70px;
+}
+
+.donations-title {
+  font-size: 40px;
+}
+
+.donations-buttons-row_1 > button {
+  width: 190px;
+  height: 50px;
+  margin: 10px;
+  margin-left: 0px;
+  border: none;
+  background-color: #4f60a4;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.donations-buttons-row_1 > button:hover {
+  background-color: #ffa454;
+  color: #4f60a4;
+}
+
+.donations-buttons-row_2 > button {
+  width: 190px;
+  height: 50px;
+  margin: 10px;
+  margin-left: 0px;
+  border: none;
+  background-color: #4f60a4;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.donations-buttons-row_2 > button:hover {
+  background-color: #ffa454;
+  color: #4f60a4;
+}
+
+.donations-logo {
+  height: 455px;
+  width: 415px;
+  background-image: url(assets/images/Decorarion.webp);
+  background-repeat: no-repeat;
+}
+
+footer {
+  background-color: #fff8ed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 270px;
+}
+
+.logoInfo {
+  margin-left: 50px;
+}
+
+.socialMedia {
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.socialMedia-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.socialMedia-icons a {
+  margin: 10px;
+}
+
+.socialMedia button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  background-color: #ffa454;
+  color: #4f60a4;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  transition: 0.5s;
+}
+
+.socialMedia button:hover {
+  background-color: #4f60a4;
+  color: #ffa454;
+}
+
+.tectonicaLink {
+  text-decoration: none;
+  color: #ffa454;
+  transition: 0.5s;
+}
+
+.tectonicaLink:hover {
+  text-decoration: underline;
+  color: #4f60a4;
+}
